@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>startree</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style/common.css">
+  <link rel="stylesheet" type="text/css" href="style/article.css">
+</head>
+<body>
+  <div class="page">
+    <div class="main">
+      <div class="primary">
+        <div class="content">
+          <nav class="nav-single">
+            <span class="nav-previous">
+              <a href="">
+                <span class="meta-nav">←</span>
+                Previous
+              </a>
+            </span>
+            <span class="nav-next"></span>
+          </nav>
+          <article class="post-1 post">
+            <header class="entry-header">
+              <h1 class="entry-title">Cannot read property pm2_env of Undefined</h1>
+              <div class="entry-meta">
+                <span class="sep">Posted on</span>
+                <a href="" title="down 3:51">
+                  <time class="entry-date" datetime="2016-07-12t15:51:41+00:00">2016-07-12t15:51:41+00:00</time>
+                </a>
+              </div>
+            </header>
+            <div class="entry-content">
+              <div>
+                <div class="plain">
+                  <pre>
+[PM2][WARN] Applications x-filter not running, starting...
+/usr/local/lib/node_modules/pm2/lib/CLI.js:461
+        Common.printOut(cst.PREFIX_MSG + 'App [%s] launched (%d instances)', data[0].pm2_env.name, data.length);
+                                                                                    ^
+ 
+TypeError: Cannot read property 'pm2_env' of undefined
+    at /usr/local/lib/node_modules/pm2/lib/CLI.js:461:85
+    at /usr/local/lib/node_modules/pm2/node_modules/pm2-axon-rpc/lib/client.js:45:10
+    at Parser.<anonymous> (/usr/local/lib/node_modules/pm2/node_modules/pm2-axon/lib/sockets/req.js:67:8)
+    at emitOne (events.js:96:13)
+    at Parser.emit (events.js:188:7)
+    at Parser._write (/usr/local/lib/node_modules/pm2/node_modules/amp/lib/stream.js:91:16)
+    at doWrite (_stream_writable.js:307:12)
+    at writeOrBuffer (_stream_writable.js:293:5)
+    at Parser.Writable.write (_stream_writable.js:220:11)
+    at Socket.ondata (_stream_readable.js:555:20)
+                  </pre>
+                </div>
+              </div>
+              <p>碰到这个心情不好，最后发现。其实只要跑一下 pm2 update 就好了。大致是因为更新了 pm2 没有跑这个命令出来的问题。</p>
+            </div>
+            <footer class="entry-meta">
+              This entry was posted in by 
+              <a href="">lellansin</a>
+            </footer>
+          </article>
+          <div class="comments">
+            <div class="respond">
+              <h3 class="reply">
+                Push comment
+              </h3>
+              <form class="form">
+                <p class="form-notes">
+                  电子邮件地址不会被公开。 必填项已用
+                  <span>*</span>
+                  标注
+                </p>
+                <p class="form-author">
+                  <label for="author">
+                    Name
+                    <span>*</span>
+                  </label>
+                  <input class="author" id="author" name="author" type="text" value size="30" aria-required="true"></input>
+                </p>
+                <p class="form-email">
+                  <label for="email">
+                    Email
+                    <span>*</span>
+                  </label>
+                  <input class="email" type="text"  name="email" id="email" value size="30" aria-required="true">
+                </p>
+                <p class="form-content">
+                  <label for="content">
+                    Comment
+                  </label>
+                  <textarea id="content" class="content" name="content" cols="45" rows="8" aria-required="true"></textarea>
+                </p>
+                <p class="form-submit">
+                  <input class="submit" type="submit" value="Push comment"></input>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/handlebars.js"></script>
+  <script type="text/javascript" src="javascript/main.js"></script>
+  <script type="text/javascript">
+    get_public_header();
+    get_public_footer();
+  </script>
+</body>
+</html>

@@ -39,7 +39,7 @@
   font-size: 15px;
   color: #1982d1;
 }
-.syntax {
+.plain {
   background-color: white !important;
   width: 100% !important;
   margin: 1em 0 1em 0 !important;
@@ -48,6 +48,36 @@
   overflow-y: hidden !important;
   font-size: 1em !important;
 }
-.syntax div {
+.plain div {
   width: 100% !important;
+}
+.entry-content .read-more {
+  margin-bottom: 1.625em;
+}
+
+.main .primary {
+  float: left;
+  margin: 0 -26.4% 0 0;
+  width: 100%;
+}
+.main .content {
+  margin: 0 34% 0 7.6%;
+  width: 58.4%;
+}
+.main .content nav {
+  overflow: hidden;
+  padding: 0 0 1.625em;
+}
+.nav-previous {
+  float: left;
+  width: 50%;
+}
+.content nav a {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.2em;
+  color: #1282d1;
+}
+.content nav .meta-nav {
+  font-weight: 400;
 }
