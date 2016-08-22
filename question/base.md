@@ -70,3 +70,27 @@ add.apply(ssb, [3, 1]);
 //除第一位参数后其他参数都会作为实参传递到add函数内
 //他们的差别就是实参的传递方式不同，第二种将所有实参作为数组传递
 ```
+
+# 函数能不能使用this
+
+```javascript
+function fun() {
+	this.ok = 'hello';
+}
+console.log(fun.ok);	//undefined
+```
+由此可见this是指代拥有方法的对象
+
+# 空数组在进行布尔值检测的时候是false还是true
+```javascript
+function temp() {}
+if (temp) {
+	console.log('ok1');	//'ok1'
+}
+
+var array = [];
+if (array) {
+	console.log('ok2');	//'ok2'
+}
+```
+对象没有属性的时候所对应的布尔值也是true
