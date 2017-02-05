@@ -22,4 +22,5 @@ app.set('views, __dirname + '/views');
 
 app.engine('html', require('ejs').renderFile);		// 调用ejs里的renderFile()方法将ejs返回的引擎名修改为'html'
 
-app.set('view engine', 'ejs');						// 设置引擎
+app.set('view engine', 'html');						// 设置引擎
+```
