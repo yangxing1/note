@@ -1,0 +1,29 @@
+/*设置公共字体大小与颜色*/
+
+.font-16 { font-size:0.16rem; }
+.font-24 { font-size:0.24rem; }
+.font-28 { font-size:0.28rem; }
+.font-30 { font-size:0.30rem; }
+.font-36 { font-size:0.36rem; }
+
+.font-fff { color:#ffffff; }
+.font-ff6 { color:#ff6c00; }
+.font-2d2 { color:#2d2d2d; }
+.font-bdb { color:#bdbdbd; }
+
+
+/* inputplaceplacholder 蓝色*/
+body .weui-cell .weui-cell__bd .size_holder:-ms-input-placeholder{color:#0588BF!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holder::-webkit-input-placeholder{color:#0588BF!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holder:-moz-placeholder{color:#0588BF!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holder::-moz-placeholder{color:#0588BF!important;font-size:0.24rem !important;}
+/* inputplaceplacholder 灰色 */
+body .weui-cell .weui-cell__bd .size_holderb:-ms-input-placeholder{color:#bdbdbd!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holderb::-webkit-input-placeholder{color:#bdbdbd!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holderb:-moz-placeholder{color:#bdbdbd!important;font-size:0.24rem !important;}
+body .weui-cell .weui-cell__bd .size_holderb::-moz-placeholder{color:#bdbdbd!important;font-size:0.24rem !important;}
+
+
+/*大众颜色*/
+.bgc-ff9 { background-color:#ff9c00; }
+
