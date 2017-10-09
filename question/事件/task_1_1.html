@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>startree</title>
+</head>
+<body>
+<h1>hello</h1>
+<script type="text/javascript">
+  function onLoad(f){
+    if (onLoad.load) {
+      setTimeout(f, 0);
+      console.log('1');
+    } 
+    else if (window.addEventListener) {
+      addEventListener('load', f, false);
+      console.log('2');
+    }
+  }
+  onLoad.load = false;
+  onLoad(function () {
+    onLoad.load = true;
+    console.log('OK');
+  });
+</script>
+</body>
+</html>
